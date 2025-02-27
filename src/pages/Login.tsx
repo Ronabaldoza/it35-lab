@@ -4,6 +4,8 @@ import {
     IonButtons,
       IonContent, 
       IonHeader, 
+      IonInput, 
+      IonInputPasswordToggle, 
       IonMenuButton, 
       IonPage, 
       IonTitle, 
@@ -20,6 +22,9 @@ import {
     return (
       <IonPage>
         <IonHeader>
+        <IonInput type="password" label="Password" value="NeverGonnaGiveYouUp">
+      <IonInputPasswordToggle slot="end"></IonInputPasswordToggle>
+    </IonInput>
           <IonToolbar>
             <IonTitle>Login</IonTitle>
           </IonToolbar>
