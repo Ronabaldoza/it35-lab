@@ -1,6 +1,5 @@
-
-import React, { useState } from 'react';
-import { 
+ import React, { useState } from 'react';
+ import { 
   IonButton,
   IonContent, 
   IonHeader, 
@@ -12,7 +11,8 @@ import {
   IonLabel,
   useIonRouter,
   IonAlert
-} from '@ionic/react'; 
+} from '@ionic/react';
+
 
 const Login: React.FC = () => {
   const navigation = useIonRouter();
