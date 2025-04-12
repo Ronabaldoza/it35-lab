@@ -27,12 +27,12 @@ const AlertBox: React.FC<{ message: string; isOpen: boolean; onClose: () => void
 };
 
 const Login: React.FC = () => {
-   const navigation = useIonRouter();
-   const [email, setEmail] = useState('');
-   const [password, setPassword] = useState('');
-   const [alertMessage, setAlertMessage] = useState('');
-   const [showAlert, setShowAlert] = useState(false);
-   const [showToast, setShowToast] = useState(false);
+  const navigation = useIonRouter();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [alertMessage, setAlertMessage] = useState('');
+  const [showAlert, setShowAlert] = useState(false);
+  const [showToast, setShowToast] = useState(false);
 
   const doLogin = async () => {
     const { error } = await supabase.auth.signInWithPassword({ email, password });

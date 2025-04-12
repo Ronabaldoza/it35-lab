@@ -1,18 +1,18 @@
- import { 
-   IonButton,
-     IonButtons,
-       IonContent, 
-       IonHeader, 
-       IonIcon, 
-       IonLabel, 
-       IonMenuButton, 
-       IonPage, 
-       IonRouterOutlet, 
-       IonTabBar, 
-       IonTabButton, 
-       IonTabs, 
-       IonTitle, 
-       IonToolbar 
+import { 
+  IonButton,
+    IonButtons,
+      IonContent, 
+      IonHeader, 
+      IonIcon, 
+      IonLabel, 
+      IonMenuButton, 
+      IonPage, 
+      IonRouterOutlet, 
+      IonTabBar, 
+      IonTabButton, 
+      IonTabs, 
+      IonTitle, 
+      IonToolbar 
   } from '@ionic/react';
   import { IonReactRouter } from '@ionic/react-router';
   import { bookOutline, search, star } from 'ionicons/icons';
@@ -55,4 +55,5 @@
     </IonReactRouter>
     );
   };
-       export default Home;
+  
+  export default Home;
