@@ -9,50 +9,97 @@ import {
 function Favorites() {
   return (
     <IonAccordionGroup>
-      <IonAccordion value="first">
+
+      <IonAccordion value="focus">
         <IonItem slot="header" color="primary">
-          <IonLabel>Faith</IonLabel>
+          <IonLabel><strong>Focus</strong></IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          <strong>Hebrews 11:1</strong> — Now faith is confidence in what we hope for and assurance about what we do not see.
+          Eliminate distractions and give your full attention to your goals. Small efforts consistently applied lead to big results.
         </div>
       </IonAccordion>
 
-      <IonAccordion value="second">
+      <IonAccordion value="discipline">
         <IonItem slot="header" color="tertiary">
-          <IonLabel>Love</IonLabel>
+          <IonLabel><strong>Discipline</strong></IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          <strong>1 Corinthians 13:4-5</strong> — Love is patient, love is kind. It does not envy, it does not boast, it is not proud.
+          Success doesn't come from motivation alone—it’s built on daily habits and self-discipline.
         </div>
       </IonAccordion>
 
-      <IonAccordion value="third">
+      <IonAccordion value="resilience">
         <IonItem slot="header" color="success">
-          <IonLabel>Strength</IonLabel>
+          <IonLabel><strong>Resilience</strong></IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          <strong>Philippians 4:13</strong> — I can do all things through Christ who strengthens me.
+          Setbacks don’t define you. What matters is how you rise, learn, and keep going.
         </div>
       </IonAccordion>
 
-      <IonAccordion value="fourth">
+      <IonAccordion value="consistency">
         <IonItem slot="header" color="warning">
-          <IonLabel>Guidance</IonLabel>
+          <IonLabel><strong>Consistency</strong></IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          <strong>Proverbs 3:5-6</strong> — Trust in the Lord with all your heart and lean not on your own understanding.
+          Keep showing up. Even on tough days, progress is made one step at a time.
         </div>
       </IonAccordion>
 
-      <IonAccordion value="fifth">
+      <IonAccordion value="growth">
         <IonItem slot="header" color="danger">
-          <IonLabel>Peace</IonLabel>
+          <IonLabel><strong>Growth Mindset</strong></IonLabel>
         </IonItem>
         <div className="ion-padding" slot="content">
-          <strong>John 14:27</strong> — Peace I leave with you; my peace I give you. I do not give to you as the world gives.
+          Every challenge is an opportunity to grow. Embrace learning, not just grades.
         </div>
       </IonAccordion>
+
+      <IonAccordion value="purpose">
+        <IonItem slot="header" color="medium">
+          <IonLabel><strong>Purpose</strong></IonLabel>
+        </IonItem>
+        <div className="ion-padding" slot="content">
+          Remember why you started. Your purpose is bigger than temporary stress.
+        </div>
+      </IonAccordion>
+
+      <IonAccordion value="patience">
+        <IonItem slot="header" color="light">
+          <IonLabel><strong>Patience</strong></IonLabel>
+        </IonItem>
+        <div className="ion-padding" slot="content">
+          Great things take time. Trust the process and honor your own pace.
+        </div>
+      </IonAccordion>
+
+      <IonAccordion value="belief">
+        <IonItem slot="header" color="secondary">
+          <IonLabel><strong>Self-Belief</strong></IonLabel>
+        </IonItem>
+        <div className="ion-padding" slot="content">
+          You are capable of more than you know. Don’t doubt yourself—just begin.
+        </div>
+      </IonAccordion>
+
+      <IonAccordion value="balance">
+        <IonItem slot="header" color="warning">
+          <IonLabel><strong>Balance</strong></IonLabel>
+        </IonItem>
+        <div className="ion-padding" slot="content">
+          Take care of your mind and body. Rest is part of productivity, not the opposite of it.
+        </div>
+      </IonAccordion>
+
+      <IonAccordion value="courage">
+        <IonItem slot="header" color="danger">
+          <IonLabel><strong>Courage</strong></IonLabel>
+        </IonItem>
+        <div className="ion-padding" slot="content">
+          Keep pushing forward, even when it's scary. Bravery is built in moments of doubt.
+        </div>
+      </IonAccordion>
+
     </IonAccordionGroup>
   );
 }
