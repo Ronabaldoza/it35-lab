@@ -1,11 +1,11 @@
-import { 
-   IonButtons,
-    IonContent, 
-    IonHeader, 
-    IonMenuButton, 
-    IonPage, 
-    IonTitle, 
-    IonToolbar 
+import {
+  IonContent,
+  IonHeader,
+  IonMenuButton,
+  IonPage,
+  IonTitle,
+  IonToolbar,
+  IonButtons
 } from '@ionic/react';
 import FeedContainer from '../../components/FeedContainer';
 
@@ -14,26 +14,18 @@ const Feed: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonButtons slot='start'>
-            <IonMenuButton></IonMenuButton>
+          <IonButtons slot="start">
+            <IonMenuButton />
           </IonButtons>
           <IonTitle>Feed</IonTitle>
         </IonToolbar>
       </IonHeader>
+
       <IonContent fullscreen>
-        <div
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            height: '100%',
-          }}
-        >
-          Feed
-        </div>
         <FeedContainer />
       </IonContent>
     </IonPage>
   );
 };
-export default Feed; 
+
+export default Feed;

@@ -5,7 +5,7 @@ import {
   IonItem,
   IonLabel,
 } from '@ionic/react';
-
+ 
 function Favorites() {
   return (
     <IonAccordionGroup>
