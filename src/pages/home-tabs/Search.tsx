@@ -64,7 +64,7 @@ const Search: React.FC = () => {
               </IonLabel>
             </IonItem>
             <div className="ion-padding" slot="content">
-              <p>
+              <p> 
                 <strong>Jeremiah 29:11:</strong> "For I know the plans I have for you," declares the LORD, "plans to prosper you and not to harm you, 
                 plans to give you hope and a future."
               </p>

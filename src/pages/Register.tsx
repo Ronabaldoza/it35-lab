@@ -42,20 +42,12 @@ const Register: React.FC = () => {
     const [showSuccessModal, setShowSuccessModal] = useState(false);
     const [alertMessage, setAlertMessage] = useState('');
     const [showAlert, setShowAlert] = useState(false);
-
+  
     const handleOpenVerificationModal = () => {
-       /* if (!email.endsWith("@nbsc.edu.ph")) {
-            setAlertMessage("Only @nbsc.edu.ph emails are allowed to register.");
-            setShowAlert(true);
-            return;
-        }
-    */
-        if (password !== confirmPassword) {
-            setAlertMessage("Passwords do not match.");
-            setShowAlert(true);
-            return;
-        }
-
+      if (!email.endsWith('@nbsc.edu.ph') && !email.endsWith('@gmail.com')) {
+        alert('Any account can register.');
+        return;
+    }
         setShowVerificationModal(true);
     };
 
@@ -109,7 +101,7 @@ const Register: React.FC = () => {
                 <IonInput label="Username" labelPlacement="stacked" fill="outline" type="text" placeholder="Enter a unique username" value={username} onIonChange={e => setUsername(e.detail.value!)} style={{ marginTop: '15px' }} />
                 <IonInput label="First Name" labelPlacement="stacked" fill="outline" type="text" placeholder="Enter your first name" value={firstName} onIonChange={e => setFirstName(e.detail.value!)} style={{ marginTop: '15px' }} />
                 <IonInput label="Last Name" labelPlacement="stacked" fill="outline" type="text" placeholder="Enter your last name" value={lastName} onIonChange={e => setLastName(e.detail.value!)} style={{ marginTop: '15px' }} />
-                <IonInput label="Email" labelPlacement="stacked" fill="outline" type="email" placeholder="youremail@nbsc.edu.ph" value={email} onIonChange={e => setEmail(e.detail.value!)} style={{ marginTop: '15px' }} />
+                <IonInput label="Email" labelPlacement="stacked" fill="outline" type="email" placeholder="@gmail.com and @nbsc.edu.ph" value={email} onIonChange={e => setEmail(e.detail.value!)} style={{ marginTop: '15px' }} />
                 <IonInput label="Password" labelPlacement="stacked" fill="outline" type="password" placeholder="Enter password" value={password} onIonChange={e => setPassword(e.detail.value!)} style={{ marginTop: '15px' }} >
                     <IonInputPasswordToggle slot="end" />
                 </IonInput>
