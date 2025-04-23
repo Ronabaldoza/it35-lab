@@ -4,53 +4,92 @@ import {
   IonAccordionGroup,
   IonItem,
   IonLabel,
+  AccordionGroupCustomEvent
 } from '@ionic/react';
- 
+
 function Favorites() {
+  const values = ['first', 'second', 'third', 'fourth', 'fifth', 'sixth'];
+
+  const accordionGroupChange = (event: AccordionGroupCustomEvent) => {
+    const collapsedItems = values.filter((value) => value !== event.detail.value);
+    const selectedValue = event.detail.value;
+
+    console.log(
+      `Expanded: ${selectedValue === undefined ? 'None' : selectedValue} | Collapsed: ${collapsedItems.join(', ')}`
+    );
+  };
+
   return (
-    <IonAccordionGroup>
+    <IonAccordionGroup onIonChange={accordionGroupChange}>
       <IonAccordion value="first">
-        <IonItem slot="header" color="primary">
-          <IonLabel>Faith</IonLabel>
+        <IonItem slot="header" color="light">
+          <IonLabel>🚀 Dream Big</IonLabel>
         </IonItem>
-        <div className="ion-padding" slot="content">
-          <strong>Hebrews 11:1</strong> — Now faith is confidence in what we hope for and assurance about what we do not see.
+        <div className="ion-padding quote-content" slot="content">
+          <blockquote>
+            “The future belongs to those who believe in the beauty of their dreams.”<br />
+            <span>– Eleanor Roosevelt</span>
+          </blockquote>
         </div>
       </IonAccordion>
 
       <IonAccordion value="second">
-        <IonItem slot="header" color="tertiary">
-          <IonLabel>Love</IonLabel>
+        <IonItem slot="header" color="light">
+          <IonLabel>🔥 Stay Focused</IonLabel>
         </IonItem>
-        <div className="ion-padding" slot="content">
-          <strong>1 Corinthians 13:4-5</strong> — Love is patient, love is kind. It does not envy, it does not boast, it is not proud.
+        <div className="ion-padding quote-content" slot="content">
+          <blockquote>
+            “Don’t watch the clock; do what it does. Keep going.”<br />
+            <span>– Sam Levenson</span>
+          </blockquote>
         </div>
       </IonAccordion>
 
       <IonAccordion value="third">
-        <IonItem slot="header" color="success">
-          <IonLabel>Strength</IonLabel>
+        <IonItem slot="header" color="light">
+          <IonLabel>🌟 Make It Happen</IonLabel>
         </IonItem>
-        <div className="ion-padding" slot="content">
-          <strong>Philippians 4:13</strong> — I can do all things through Christ who strengthens me.
+        <div className="ion-padding quote-content" slot="content">
+          <blockquote>
+            “Success doesn’t just find you. You have to go out and get it.”<br />
+            <span>– Unknown</span>
+          </blockquote>
         </div>
       </IonAccordion>
 
       <IonAccordion value="fourth">
-        <IonItem slot="header" color="warning">
-          <IonLabel>Guidance</IonLabel>
+        <IonItem slot="header" color="light">
+          <IonLabel>💡 Believe in Yourself</IonLabel>
         </IonItem>
-        <div className="ion-padding" slot="content">
-          <strong>Proverbs 3:5-6</strong> — Trust in the Lord with all your heart and lean not on your own understanding.
+        <div className="ion-padding quote-content" slot="content">
+          <blockquote>
+            “Believe you can and you're halfway there.”<br />
+            <span>– Theodore Roosevelt</span>
+          </blockquote>
         </div>
       </IonAccordion>
 
       <IonAccordion value="fifth">
-        <IonItem slot="header" color="danger">
-          <IonLabel>Peace</IonLabel>
+        <IonItem slot="header" color="light">
+          <IonLabel>💥 Never Give Up</IonLabel>
         </IonItem>
-        <div className="ion-padding" slot="content">
-          <strong>John 14:27</strong> — Peace I leave with you; my peace I give you. I do not give to you as the world gives.
+        <div className="ion-padding quote-content" slot="content">
+          <blockquote>
+            “Our greatest glory is not in never falling, but in rising every time we fall.”<br />
+            <span>– Confucius</span>
+          </blockquote>
+        </div>
+      </IonAccordion>
+
+      <IonAccordion value="sixth">
+        <IonItem slot="header" color="light">
+          <IonLabel>🌈 Stay Positive</IonLabel>
+        </IonItem>
+        <div className="ion-padding quote-content" slot="content">
+          <blockquote>
+            “Keep your face always toward the sunshine—and shadows will fall behind you.”<br />
+            <span>– Walt Whitman</span>
+          </blockquote>
         </div>
       </IonAccordion>
     </IonAccordionGroup>
