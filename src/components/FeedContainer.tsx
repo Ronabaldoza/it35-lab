@@ -133,7 +133,7 @@ const FeedContainer = () => {
       {user && (
         <IonCard style={{ borderRadius: '16px', boxShadow: '0 4px 10px rgba(0, 0, 0, 0.1)' }}>
           <IonCardHeader>
-            <IonCardTitle style={{ fontSize: '1.2rem', fontWeight: 'bold' }}>🧠 Share Your Thoughts</IonCardTitle>
+            <IonCardTitle style={{ fontSize: '1.2rem', fontWeight: 'bold' }}> Write Something </IonCardTitle>
           </IonCardHeader>
           <IonCardContent>
             <IonInput
